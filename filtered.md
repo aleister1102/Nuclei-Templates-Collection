@@ -1,6 +1,6 @@
-# Top 50 Kho Chứa Git (Nhỏ hơn 5.0MB)
+# Top 100 Kho Chứa Git (Nhỏ hơn 5.0MB)
 
-*Tự động tạo lúc: 2025-05-26 14:49:21*
+*Tự động tạo lúc: 2025-05-26 15:15:48*
 *Xóa file này để buộc kịch bản lấy lại dữ liệu mới từ API.*
 
 | Hạng | Tên Kho Chứa | ⭐ Sao | Kích thước | URL |
@@ -31,11 +31,11 @@
 | 24 | `zer0yu/Open-PoC` | 55 | `2.65 MB` | [https://github.com/zer0yu/Open-PoC](https://github.com/zer0yu/Open-PoC) |
 | 25 | `esetal/nuclei-bb-templates` | 50 | `0.11 MB` | [https://github.com/esetal/nuclei-bb-templates](https://github.com/esetal/nuclei-bb-templates) |
 | 26 | `0xAwali/Virtual-Host` | 49 | `1.14 MB` | [https://github.com/0xAwali/Virtual-Host](https://github.com/0xAwali/Virtual-Host) |
-| 27 | `cyberheartmi9/Proxyshell-Scanner` | 43 | `0.04 MB` | [https://github.com/cyberheartmi9/Proxyshell-Scanner](https://github.com/cyberheartmi9/Proxyshell-Scanner) |
-| 28 | `tamimhasan404/Open-Source-Nuclei-Templates-Downloader` | 43 | `0.01 MB` | [https://github.com/tamimhasan404/Open-Source-Nuclei-Templates-Downloader](https://github.com/tamimhasan404/Open-Source-Nuclei-Templates-Downloader) |
-| 29 | `Lu3ky13/Authorization-Nuclei-Templates` | 39 | `0.02 MB` | [https://github.com/Lu3ky13/Authorization-Nuclei-Templates](https://github.com/Lu3ky13/Authorization-Nuclei-Templates) |
+| 27 | `tamimhasan404/Open-Source-Nuclei-Templates-Downloader` | 43 | `0.01 MB` | [https://github.com/tamimhasan404/Open-Source-Nuclei-Templates-Downloader](https://github.com/tamimhasan404/Open-Source-Nuclei-Templates-Downloader) |
+| 28 | `cyberheartmi9/Proxyshell-Scanner` | 43 | `0.04 MB` | [https://github.com/cyberheartmi9/Proxyshell-Scanner](https://github.com/cyberheartmi9/Proxyshell-Scanner) |
+| 29 | `R-s0n/Custom_Vuln_Scan_Templates` | 39 | `0.18 MB` | [https://github.com/R-s0n/Custom_Vuln_Scan_Templates](https://github.com/R-s0n/Custom_Vuln_Scan_Templates) |
 | 30 | `rzizah/private-nuclei-template` | 39 | `0.00 MB` | [https://github.com/rzizah/private-nuclei-template](https://github.com/rzizah/private-nuclei-template) |
-| 31 | `R-s0n/Custom_Vuln_Scan_Templates` | 39 | `0.18 MB` | [https://github.com/R-s0n/Custom_Vuln_Scan_Templates](https://github.com/R-s0n/Custom_Vuln_Scan_Templates) |
+| 31 | `Lu3ky13/Authorization-Nuclei-Templates` | 39 | `0.02 MB` | [https://github.com/Lu3ky13/Authorization-Nuclei-Templates](https://github.com/Lu3ky13/Authorization-Nuclei-Templates) |
 | 32 | `notnotnotveg/nuclei-custom-templates` | 37 | `0.05 MB` | [https://github.com/notnotnotveg/nuclei-custom-templates](https://github.com/notnotnotveg/nuclei-custom-templates) |
 | 33 | `medbsq/ncl` | 34 | `0.13 MB` | [https://github.com/medbsq/ncl](https://github.com/medbsq/ncl) |
 | 34 | `test502git/log4j-fuzz-head-poc` | 33 | `0.03 MB` | [https://github.com/test502git/log4j-fuzz-head-poc](https://github.com/test502git/log4j-fuzz-head-poc) |
@@ -44,14 +44,64 @@
 | 37 | `Christbowel/CVE-2024-25600_Nuclei-Template` | 29 | `0.01 MB` | [https://github.com/Christbowel/CVE-2024-25600_Nuclei-Template](https://github.com/Christbowel/CVE-2024-25600_Nuclei-Template) |
 | 38 | `HernanRodriguez1/ScanReflectedSSTI` | 29 | `0.01 MB` | [https://github.com/HernanRodriguez1/ScanReflectedSSTI](https://github.com/HernanRodriguez1/ScanReflectedSSTI) |
 | 39 | `juanschallibaum/CVE-2024-38473-Nuclei-Template` | 28 | `0.02 MB` | [https://github.com/juanschallibaum/CVE-2024-38473-Nuclei-Template](https://github.com/juanschallibaum/CVE-2024-38473-Nuclei-Template) |
-| 40 | `U53RW4R3/nuclei-fuzzer-templates` | 27 | `0.05 MB` | [https://github.com/U53RW4R3/nuclei-fuzzer-templates](https://github.com/U53RW4R3/nuclei-fuzzer-templates) |
+| 40 | `jhonnybonny/nuclei-templates-bitrix` | 27 | `0.04 MB` | [https://github.com/jhonnybonny/nuclei-templates-bitrix](https://github.com/jhonnybonny/nuclei-templates-bitrix) |
 | 41 | `KeepHowling/all_freaking_nuclei_templates` | 27 | `2.93 MB` | [https://github.com/KeepHowling/all_freaking_nuclei_templates](https://github.com/KeepHowling/all_freaking_nuclei_templates) |
-| 42 | `jhonnybonny/nuclei-templates-bitrix` | 27 | `0.04 MB` | [https://github.com/jhonnybonny/nuclei-templates-bitrix](https://github.com/jhonnybonny/nuclei-templates-bitrix) |
+| 42 | `U53RW4R3/nuclei-fuzzer-templates` | 27 | `0.05 MB` | [https://github.com/U53RW4R3/nuclei-fuzzer-templates](https://github.com/U53RW4R3/nuclei-fuzzer-templates) |
 | 43 | `ZephrFish/CVE-2024-4577-PHP-RCE` | 26 | `0.01 MB` | [https://github.com/ZephrFish/CVE-2024-4577-PHP-RCE](https://github.com/ZephrFish/CVE-2024-4577-PHP-RCE) |
 | 44 | `Saitle/Yamilicious` | 26 | `0.05 MB` | [https://github.com/Saitle/Yamilicious](https://github.com/Saitle/Yamilicious) |
 | 45 | `MrCl0wnLab/Nuclei-Template-CVE-2022-1388-BIG-IP-iControl-REST-Exposed` | 24 | `0.01 MB` | [https://github.com/MrCl0wnLab/Nuclei-Template-CVE-2022-1388-BIG-IP-iControl-REST-Exposed](https://github.com/MrCl0wnLab/Nuclei-Template-CVE-2022-1388-BIG-IP-iControl-REST-Exposed) |
 | 46 | `MR-pentestGuy/nuclei-templates` | 24 | `0.04 MB` | [https://github.com/MR-pentestGuy/nuclei-templates](https://github.com/MR-pentestGuy/nuclei-templates) |
 | 47 | `obreinx/nuceli-templates` | 23 | `0.32 MB` | [https://github.com/obreinx/nuceli-templates](https://github.com/obreinx/nuceli-templates) |
-| 48 | `bug-vs-me/WPML-XSS` | 22 | `0.00 MB` | [https://github.com/bug-vs-me/WPML-XSS](https://github.com/bug-vs-me/WPML-XSS) |
-| 49 | `toramanemre/log4j-rce-detect-waf-bypass` | 22 | `0.00 MB` | [https://github.com/toramanemre/log4j-rce-detect-waf-bypass](https://github.com/toramanemre/log4j-rce-detect-waf-bypass) |
-| 50 | `0xr2r/templates-nucleir2r` | 21 | `0.05 MB` | [https://github.com/0xr2r/templates-nucleir2r](https://github.com/0xr2r/templates-nucleir2r) |
+| 48 | `toramanemre/log4j-rce-detect-waf-bypass` | 22 | `0.00 MB` | [https://github.com/toramanemre/log4j-rce-detect-waf-bypass](https://github.com/toramanemre/log4j-rce-detect-waf-bypass) |
+| 49 | `bug-vs-me/WPML-XSS` | 22 | `0.00 MB` | [https://github.com/bug-vs-me/WPML-XSS](https://github.com/bug-vs-me/WPML-XSS) |
+| 50 | `ricardomaia/nuclei-template-generator-for-wordpress-plugins` | 21 | `0.61 MB` | [https://github.com/ricardomaia/nuclei-template-generator-for-wordpress-plugins](https://github.com/ricardomaia/nuclei-template-generator-for-wordpress-plugins) |
+| 51 | `NoRed0x/nored0x-Nuclei-Templates` | 21 | `3.10 MB` | [https://github.com/NoRed0x/nored0x-Nuclei-Templates](https://github.com/NoRed0x/nored0x-Nuclei-Templates) |
+| 52 | `0xr2r/templates-nucleir2r` | 21 | `0.05 MB` | [https://github.com/0xr2r/templates-nucleir2r](https://github.com/0xr2r/templates-nucleir2r) |
+| 53 | `ptyspawnbinbash/template-enhancer` | 20 | `0.08 MB` | [https://github.com/ptyspawnbinbash/template-enhancer](https://github.com/ptyspawnbinbash/template-enhancer) |
+| 54 | `valaDevs/nuclei-backupfile-finder` | 20 | `0.01 MB` | [https://github.com/valaDevs/nuclei-backupfile-finder](https://github.com/valaDevs/nuclei-backupfile-finder) |
+| 55 | `0xmaximus/final_freaking_nuclei_templates` | 20 | `3.44 MB` | [https://github.com/0xmaximus/final_freaking_nuclei_templates](https://github.com/0xmaximus/final_freaking_nuclei_templates) |
+| 56 | `aels/CVE-2022-37042` | 19 | `0.02 MB` | [https://github.com/aels/CVE-2022-37042](https://github.com/aels/CVE-2022-37042) |
+| 57 | `freakyclown/Nuclei_templates` | 18 | `0.00 MB` | [https://github.com/freakyclown/Nuclei_templates](https://github.com/freakyclown/Nuclei_templates) |
+| 58 | `numanturle/CVE-2022-41040` | 18 | `0.45 MB` | [https://github.com/numanturle/CVE-2022-41040](https://github.com/numanturle/CVE-2022-41040) |
+| 59 | `kaanatmacaa/CVE-2024-23897` | 18 | `0.01 MB` | [https://github.com/kaanatmacaa/CVE-2024-23897](https://github.com/kaanatmacaa/CVE-2024-23897) |
+| 60 | `YashVardhanTrip/nuclei-templates-initial-access` | 18 | `0.01 MB` | [https://github.com/YashVardhanTrip/nuclei-templates-initial-access](https://github.com/YashVardhanTrip/nuclei-templates-initial-access) |
+| 61 | `k00kx/nuclei-templates` | 17 | `0.00 MB` | [https://github.com/k00kx/nuclei-templates](https://github.com/k00kx/nuclei-templates) |
+| 62 | `dk4trin/templates-nuclei` | 17 | `0.03 MB` | [https://github.com/dk4trin/templates-nuclei](https://github.com/dk4trin/templates-nuclei) |
+| 63 | `glyptho/templatesallnuclei` | 17 | `0.10 MB` | [https://github.com/glyptho/templatesallnuclei](https://github.com/glyptho/templatesallnuclei) |
+| 64 | `EslamMonex/subdomain-takeover` | 16 | `0.01 MB` | [https://github.com/EslamMonex/subdomain-takeover](https://github.com/EslamMonex/subdomain-takeover) |
+| 65 | `topscoder/nuclei-zero-day` | 16 | `0.03 MB` | [https://github.com/topscoder/nuclei-zero-day](https://github.com/topscoder/nuclei-zero-day) |
+| 66 | `RandomRobbieBF/nuclei-drupal-sa` | 16 | `0.30 MB` | [https://github.com/RandomRobbieBF/nuclei-drupal-sa](https://github.com/RandomRobbieBF/nuclei-drupal-sa) |
+| 67 | `ethicalhackingplayground/erebus-templates` | 16 | `0.02 MB` | [https://github.com/ethicalhackingplayground/erebus-templates](https://github.com/ethicalhackingplayground/erebus-templates) |
+| 68 | `r3dcl1ff/nuclei-templates` | 15 | `0.06 MB` | [https://github.com/r3dcl1ff/nuclei-templates](https://github.com/r3dcl1ff/nuclei-templates) |
+| 69 | `edoardottt/RFDos-Scanner` | 14 | `0.01 MB` | [https://github.com/edoardottt/RFDos-Scanner](https://github.com/edoardottt/RFDos-Scanner) |
+| 70 | `erickfernandox/nuclei-templates` | 14 | `0.20 MB` | [https://github.com/erickfernandox/nuclei-templates](https://github.com/erickfernandox/nuclei-templates) |
+| 71 | `System00-Security/backflow` | 14 | `0.02 MB` | [https://github.com/System00-Security/backflow](https://github.com/System00-Security/backflow) |
+| 72 | `yavolo/nuclei-templates` | 14 | `0.01 MB` | [https://github.com/yavolo/nuclei-templates](https://github.com/yavolo/nuclei-templates) |
+| 73 | `JoshMorrison99/url-based-nuclei-templates` | 13 | `0.08 MB` | [https://github.com/JoshMorrison99/url-based-nuclei-templates](https://github.com/JoshMorrison99/url-based-nuclei-templates) |
+| 74 | `kh4sh3i/CVE-2022-23131` | 13 | `0.01 MB` | [https://github.com/kh4sh3i/CVE-2022-23131](https://github.com/kh4sh3i/CVE-2022-23131) |
+| 75 | `Mr-xn/CVE-2023-23333` | 13 | `0.00 MB` | [https://github.com/Mr-xn/CVE-2023-23333](https://github.com/Mr-xn/CVE-2023-23333) |
+| 76 | `praetorian-inc/chariot-launch-nuclei-templates` | 12 | `0.01 MB` | [https://github.com/praetorian-inc/chariot-launch-nuclei-templates](https://github.com/praetorian-inc/chariot-launch-nuclei-templates) |
+| 77 | `ree4pwn/my-nuclei-templates` | 11 | `0.01 MB` | [https://github.com/ree4pwn/my-nuclei-templates](https://github.com/ree4pwn/my-nuclei-templates) |
+| 78 | `c-sh0/nuclei_templates` | 11 | `0.05 MB` | [https://github.com/c-sh0/nuclei_templates](https://github.com/c-sh0/nuclei_templates) |
+| 79 | `bhataasim1/PersonalTemplates` | 11 | `0.01 MB` | [https://github.com/bhataasim1/PersonalTemplates](https://github.com/bhataasim1/PersonalTemplates) |
+| 80 | `1in9e/my-nuclei-templates` | 11 | `0.08 MB` | [https://github.com/1in9e/my-nuclei-templates](https://github.com/1in9e/my-nuclei-templates) |
+| 81 | `d3sca/Nuclei_Templates` | 10 | `0.00 MB` | [https://github.com/d3sca/Nuclei_Templates](https://github.com/d3sca/Nuclei_Templates) |
+| 82 | `ekinsb/Nuclei-Templates` | 10 | `0.00 MB` | [https://github.com/ekinsb/Nuclei-Templates](https://github.com/ekinsb/Nuclei-Templates) |
+| 83 | `thebrnwal/Content-Injection-Nuclei-Script` | 10 | `0.01 MB` | [https://github.com/thebrnwal/Content-Injection-Nuclei-Script](https://github.com/thebrnwal/Content-Injection-Nuclei-Script) |
+| 84 | `peanuth8r/Nuclei_Templates` | 9 | `0.00 MB` | [https://github.com/peanuth8r/Nuclei_Templates](https://github.com/peanuth8r/Nuclei_Templates) |
+| 85 | `zerbaliy3v/custom-nuclei-templates` | 9 | `0.06 MB` | [https://github.com/zerbaliy3v/custom-nuclei-templates](https://github.com/zerbaliy3v/custom-nuclei-templates) |
+| 86 | `sl4x0/NC-Templates` | 9 | `0.05 MB` | [https://github.com/sl4x0/NC-Templates](https://github.com/sl4x0/NC-Templates) |
+| 87 | `javaongsan/nuclei-templates` | 9 | `0.03 MB` | [https://github.com/javaongsan/nuclei-templates](https://github.com/javaongsan/nuclei-templates) |
+| 88 | `randomstr1ng/nuclei-sap-templates` | 9 | `0.01 MB` | [https://github.com/randomstr1ng/nuclei-sap-templates](https://github.com/randomstr1ng/nuclei-sap-templates) |
+| 89 | `exploit-io/nuclei-fuzz-templates` | 9 | `0.02 MB` | [https://github.com/exploit-io/nuclei-fuzz-templates](https://github.com/exploit-io/nuclei-fuzz-templates) |
+| 90 | `0xPugal/my-nuclei-templates` | 9 | `0.06 MB` | [https://github.com/0xPugal/my-nuclei-templates](https://github.com/0xPugal/my-nuclei-templates) |
+| 91 | `z3bd/nuclei-templates` | 8 | `0.00 MB` | [https://github.com/z3bd/nuclei-templates](https://github.com/z3bd/nuclei-templates) |
+| 92 | `alexrydzak/rydzak-nuclei-templates` | 8 | `0.04 MB` | [https://github.com/alexrydzak/rydzak-nuclei-templates](https://github.com/alexrydzak/rydzak-nuclei-templates) |
+| 93 | `AshiqurEmon/nuclei_templates` | 8 | `0.01 MB` | [https://github.com/AshiqurEmon/nuclei_templates](https://github.com/AshiqurEmon/nuclei_templates) |
+| 94 | `rahulkadavil/nuclei-templates` | 8 | `0.04 MB` | [https://github.com/rahulkadavil/nuclei-templates](https://github.com/rahulkadavil/nuclei-templates) |
+| 95 | `blazeinfosec/nuclei-templates` | 8 | `0.00 MB` | [https://github.com/blazeinfosec/nuclei-templates](https://github.com/blazeinfosec/nuclei-templates) |
+| 96 | `Elsfa7-110/mynuclei-templates` | 8 | `0.02 MB` | [https://github.com/Elsfa7-110/mynuclei-templates](https://github.com/Elsfa7-110/mynuclei-templates) |
+| 97 | `im403/nuclei-temp` | 8 | `0.07 MB` | [https://github.com/im403/nuclei-temp](https://github.com/im403/nuclei-temp) |
+| 98 | `coldrainh/nuclei-ByMyself` | 8 | `0.01 MB` | [https://github.com/coldrainh/nuclei-ByMyself](https://github.com/coldrainh/nuclei-ByMyself) |
+| 99 | `kh4sh3i/Nextcloud-Pentesting` | 8 | `0.12 MB` | [https://github.com/kh4sh3i/Nextcloud-Pentesting](https://github.com/kh4sh3i/Nextcloud-Pentesting) |
+| 100 | `redteambrasil/nuclei-templates` | 7 | `0.01 MB` | [https://github.com/redteambrasil/nuclei-templates](https://github.com/redteambrasil/nuclei-templates) |

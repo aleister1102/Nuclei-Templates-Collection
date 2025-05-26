@@ -12,7 +12,7 @@ from datetime import datetime
 class Config:
     REPO_LIST_FILE = "README.txt"
     CLONE_DIR = "community-templates"
-    TOP_N_REPOS = 50
+    TOP_N_REPOS = 100
     MARKDOWN_RESULT_FILE = "filtered.md"
     API_CACHE_FILE = "api_cache.json"
     GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
@@ -23,6 +23,9 @@ class Config:
 
 def parse_markdown_for_repos(md_file):
     """Đọc file markdown kết quả và trích xuất danh sách URL repo."""
+    if not os.path.exists(md_file):
+        return []
+
     print(f"📄 Tìm thấy file '{md_file}'. Đang sử dụng danh sách repo từ file này...")
     repos = []
     try:
@@ -31,7 +34,8 @@ def parse_markdown_for_repos(md_file):
                 match = re.search(r"\[(https://github.com/.+?)\]", line)
                 if match:
                     repos.append({"url": match.group(1)})
-    except FileNotFoundError:
+    except Exception as e:
+        print(f"⚠️ Lỗi khi đọc file markdown '{md_file}': {e}. Sẽ tiến hành gọi API.", file=sys.stderr)
         return []
     
     if not repos:
@@ -42,7 +46,7 @@ def get_top_repos_from_api(config):
     """
     Lấy danh sách repo hàng đầu bằng cách gọi API, lọc theo kích thước, sử dụng cache và xử lý rate limit.
     """
-    print("🔎 Không tìm thấy file kết quả. Bắt đầu quá trình lấy dữ liệu từ API GitHub...")
+    print("🔎 Bắt đầu quá trình lấy dữ liệu từ API GitHub...")
     
     cache = _load_cache(config.API_CACHE_FILE)
     
@@ -99,7 +103,10 @@ def clone_or_update_repos(config, repos_to_process):
 def _load_cache(cache_file):
     if os.path.exists(cache_file):
         with open(cache_file, 'r') as f:
-            return json.load(f)
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return {} # Trả về cache rỗng nếu file JSON bị lỗi
     return {}
 
 def _save_cache(cache_file, cache_data):
@@ -108,15 +115,21 @@ def _save_cache(cache_file, cache_data):
 
 def _fetch_repo_metadata(repo_url, cache, config):
     """Hàm lấy metadata của repo, bao gồm cả kiểm tra kích thước."""
-    if repo_url in cache and 'size' in cache[repo_url]: # Kiểm tra xem cache cũ có 'size' không
-        # Nếu repo trong cache đã bị lọc vì kích thước, thì bỏ qua luôn
-        if cache[repo_url] is None: return None
-        # Kiểm tra lại size trong cache với config hiện tại
-        if cache[repo_url]['size'] > config.MAX_REPO_SIZE_KB:
-             print(f"📦 Bỏ qua từ cache (quá lớn): {repo_url} ({cache[repo_url]['size']} KB)")
-             return None
-        print(f"📦 Dùng cache cho: {repo_url}")
-        return cache[repo_url]
+    # *** PHẦN SỬA LỖI ***
+    if repo_url in cache:
+        cached_value = cache[repo_url]
+        # 1. Kiểm tra nếu giá trị cache là None (đã bị lọc trước đó) -> bỏ qua luôn
+        if cached_value is None:
+            print(f"📦 Bỏ qua từ cache (đã bị lọc): {repo_url}")
+            return None
+        
+        # 2. Nếu cache có dữ liệu, kiểm tra xem nó có hợp lệ không
+        if isinstance(cached_value, dict) and 'size' in cached_value:
+            if cached_value['size'] > config.MAX_REPO_SIZE_KB:
+                 print(f"📦 Bỏ qua từ cache (quá lớn): {repo_url} ({cached_value['size']} KB)")
+                 return None
+            print(f"📦 Dùng cache cho: {repo_url}")
+            return cached_value
 
     api_url = f"https://api.github.com/repos/{'/'.join(repo_url.strip('/').split('/')[-2:]).replace('.git','')}"
     headers = {"Accept": "application/vnd.github.v3+json"}
@@ -131,16 +144,15 @@ def _fetch_repo_metadata(repo_url, cache, config):
             wait_time = max(reset_time - time.time(), 0) + 1
             print(f"⏳ Bị giới hạn API. Đang đợi {int(wait_time)} giây...", file=sys.stderr)
             time.sleep(wait_time)
-            return _fetch_repo_metadata(repo_url, cache, config) # Thử lại
+            return _fetch_repo_metadata(repo_url, cache, config)
         
         response.raise_for_status()
         data = response.json()
         
         repo_size_kb = data.get("size", 0)
-        # *** LOGIC LỌC KÍCH THƯỚC ***
         if repo_size_kb > config.MAX_REPO_SIZE_KB:
             print(f"🚫 Bỏ qua (quá lớn): {repo_url} ({repo_size_kb} KB > {config.MAX_REPO_SIZE_KB} KB)")
-            cache[repo_url] = None # Lưu "None" vào cache để không gọi lại repo này
+            cache[repo_url] = None
             return None
 
         result = {
@@ -151,11 +163,13 @@ def _fetch_repo_metadata(repo_url, cache, config):
         cache[repo_url] = result
         print(f"📞 Lấy từ API: {repo_url} - ⭐ {result['stars']} - {result['size']} KB")
         return result
-    except requests.exceptions.RequestException:
+    except requests.exceptions.RequestException as e:
+        print(f"Lỗi request: {e}", file=sys.stderr)
         return None
 
 def _write_markdown_file(md_file, repos):
     """Ghi kết quả ra file markdown, thêm cột kích thước."""
+    if not repos: return
     with open(md_file, 'w') as f:
         f.write(f"# Top {len(repos)} Kho Chứa Git (Nhỏ hơn {Config.MAX_REPO_SIZE_KB / 1024}MB)\n\n")
         f.write(f"*Tự động tạo lúc: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n")
@@ -175,7 +189,6 @@ def main():
     """Hàm điều phối chính của kịch bản."""
     config = Config()
     
-    # Logic không đổi: ưu tiên dùng markdown, nếu không thì gọi API
     repos_to_process = parse_markdown_for_repos(config.MARKDOWN_RESULT_FILE)
     if not repos_to_process:
         repos_to_process = get_top_repos_from_api(config)
